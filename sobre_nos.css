@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@keyframes btn{
+    0%{
+
+    }
+
+    100%{
+        transform: scale(1.1);
+        transition: all;
+    }
+}
+
+body{
+    background-color: rgb(212, 211, 211);
+}
+
+.info_ser {
+    background:linear-gradient(45deg,grey, rgb(37, 37, 37)), left/cover url(../img/somoss.jpg) no-repeat;
+    margin-top: 0pc;
+    height: 83vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.info_ser h1 {
+     margin-right: 10pc;
+     font-size: 4rem;
+     font-weight: bold;
+     color: white;
+}
+
+.about {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.about_info p {
+    margin-top: 20px;
+}
+
+.about_info h1{
+ text-transform: uppercase;
+}
+
+.about_info {
+    padding: 50px;
+    width: 600px;
+}
+
+
+.about_info button {
+    animation: btn 1s infinite alternate;
+    padding: 10px;
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    background: rgb(37, 37, 37);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.about_info button:hover {
+    background: rgb(73, 73, 73);
+    color: white;
+    animation: none;
+}
+
+
+.about_conteiner h1::after{
+    content: "";
+    border: 3px solid rgb(37, 37, 37);
+    display: block;
+    margin: 0px 0px 10px 0px ;
+    width: 50%;
+}
+
+.equipe{
+    margin: auto;
+    padding: 20px 10px;
+    display: grid;
+    background-color: rgb(109, 108, 108);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+}
+
+.equipe div{
+    color: white;
+    margin-left: 10%;
+    margin-top: 200px;
+    position: relative;
+    background-color:rgb(37, 37, 37);
+    width: 80%;
+    height: 450px;
+    border-radius: 25px;
+}
+
+/* .equipe div:hover{
+    box-shadow: #000000 0px 20px 30px -10px;
+} */
+
+.redes-socias:hover{
+    transform: scale(1.3);
+}
+
+.img{
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border: 2px solid rgb(77, 75, 75);
+   width: 250px;
+   border-radius: 100%;
+}
+
+.h2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 150px;
+   margin-left: 40%;
+   margin-bottom: 20px;
+   transform: translate(-50%, -50%);
+}
+
+
+.ico{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ 
